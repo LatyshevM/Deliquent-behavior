@@ -50,7 +50,7 @@ img {
 
 /* Стили для кнопок */
 
-.button {
+/* .button {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
@@ -58,7 +58,33 @@ img {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
+} */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+/* cтили кнопок */
 
 .button:hover {
     background-color: #0056b3;
@@ -89,7 +115,7 @@ body {
 }
 
 /* Стили для кнопок навигации */
-nav ul {
+/* nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -113,11 +139,40 @@ nav ul li a:hover {
     background-color: #ddd;
 }
 
-/* Стили для разделов сайта */
+/* Стили для разделов сайта */ /*
 section {
     padding: 20px;
     margin: 20px 0;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+/* Общие стили для кнопок */
+.button-container ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.button-container ul li {
+    display: inline-block; /* Размещаем кнопки в одной строке */
+    margin-right: 10px; /* Добавляем отступ между кнопками */
+}
+
+.button-container ul li:last-child {
+    margin-right: 0; /* Убираем отступ справа у последней кнопки */
+}
+
+/* Дополнительные стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .button-container ul {
+        display: block; /* Размещаем кнопки вертикально */
+        text-align: center; /* Центрируем кнопки */
+    }
+
+    .button-container ul li {
+        display: block; /* Размещаем кнопки вертикально */
+        margin-right: 0; /* Убираем отступ справа */
+        margin-bottom: 10px; /* Добавляем отступ между кнопками */
+    }
 }
