@@ -151,8 +151,8 @@ section {
 /* Общие стили для кнопок */
 .button-container ul {
     list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем внутренние отступы */
-}
+    padding: 0; /* Убираем внутренние отступы */ 
+} 
 
 .button-container ul li {
     display: inline-block; /* Размещаем кнопки в одной строке */
@@ -174,5 +174,24 @@ section {
         display: block; /* Размещаем кнопки вертикально */
         margin-right: 0; /* Убираем отступ справа */
         margin-bottom: 10px; /* Добавляем отступ между кнопками */
+    }
+}
+
+
+/* Общие стили для кнопок */
+.button-container ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.button-container ul li {
+    display: block; /* Размещаем кнопки в столбик */
+    margin-bottom: 10px; /* Добавляем отступ между кнопками */
+}
+
+/* Дополнительные стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .button-container ul li {
+        margin-bottom: 10px; /* Оставляем отступ между кнопками */
     }
 }
